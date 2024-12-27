@@ -1,16 +1,40 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectLink from "../components/ProjectLink.astro";
+const projects = [
+  {
+    text: "GitDocumentDB",
+    url: "https://gitddb.com",
+    description: "Offline-first database that syncs with Git",
+    color: "#c0c0c0",
+  },
+  {
+    text: "TreeStickies",
+    url: "https://www.youtube.com/watch?v=PNBOYzWdfaE",
+    description: "The sticky outliner",
+    color: "#009000",
+  },
+  {
+    text: "Logseq (ja)",
+    url: "https://scrapbox.io/logseq-ja/",
+    description: "Logseq 日本語ドキュメントプロジェクト（非公式）",
+    color: "#e95800",
+  },
+];
+const pageTitle = "疏水線";
+const subTitle = "sosuisen";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle} subTitle={subTitle}>
+  <h2>My projects</h2>
+  <ul>
+    {projects.map((project) => (
+      <ProjectLink
+        url={project.url}
+        text={project.text}
+        description={project.description}
+        color={project.color}
+      />
+    ))}
+  </ul>
+</BaseLayout>

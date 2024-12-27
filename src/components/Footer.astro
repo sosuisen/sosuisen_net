@@ -1,0 +1,24 @@
+---
+import Social from "./Social.astro";
+---
+
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+
+<footer>
+    <Social
+        rootUr="https://twitter.com/"
+        userName="sosuisen_net"
+        platformName="Twitter"
+    />
+    <Social
+        rootUr="https://github.com/"
+        userName="sosuisen"
+        platformName="GitHub"
+    />
+</footer>
