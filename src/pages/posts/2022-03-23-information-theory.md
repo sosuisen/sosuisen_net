@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 情報理論と情報
 pubDate: 2022-03-23
 description: ''
-author: Hidekazu Kubota
+author: sosuisen
 image:
     url: ''
     alt: ''
@@ -13,7 +13,7 @@ tags: ["情報", "情報理論"]
 
 ## 情報理論と情報
 
-[前回、小野厚夫 「情報ということばーその来歴と意味内容」を読んだこと](/2022-02-16-what-is-information/)のきっかけは、
+[前回、小野厚夫 「情報ということばーその来歴と意味内容」を読んだこと](/posts/2022-02-16-what-is-information/)のきっかけは、
 ある機会において情報学系の学生さんに対して「情報」という語を説明したいと思ったからでした。
 
 <img src="/images/thinking.png" alt="Thinking Tanuki" style="float: left; margin-right: 16px; width: 100px;" />
