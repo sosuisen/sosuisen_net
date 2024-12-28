@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 情報という言葉について
-pubDate: 2022-02-16
+createdDate: 2022-02-16
 description: ''
 author: sosuisen
 image:

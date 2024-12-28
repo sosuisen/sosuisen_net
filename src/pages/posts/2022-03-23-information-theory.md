@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 情報理論と情報
-pubDate: 2022-03-23
+createdDate: 2022-03-23
 description: ''
 author: sosuisen
 image:
