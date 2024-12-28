@@ -32,8 +32,13 @@ const { posts } = Astro.props;
     <p>Posts tagged with {tag}</p>
     <ul>
         {
-            posts.map((post: any) => (
-                <BlogPost url={post.url} title={post.frontmatter.title} />
+            posts.sort((a: any, b: any) => {
+                    return a.frontmatter.createdDate > b.frontmatter.createdDate
+                        ? -1
+                        : 1;
+                }).
+                map((post: any) => (
+                <BlogPost url={post.url} title={post.frontmatter.title} createdDate={post.frontmatter.createdDate} />
             ))
         }
     </ul>
