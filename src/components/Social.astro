@@ -3,13 +3,13 @@ const { rootUrl, userName, platformName } = Astro.props;
 ---
 
 <div>
-    <a href={`${rootUrl}${userName}/`}>{platformName}: @{userName}</a>
+    <a href={`${rootUrl}${userName}/`}>{platformName}</a>
 </div>
 
 <style>
     a {
         font-size: 0.8rem;
-        padding: 0.5rem 1rem;
+        padding: 0.3rem 0.5rem;
         color: #555; /* 背景色だった暗いグレーを文字色に */
         background-color: #f7f7f7; /* 文字色だった明るい色を背景色に */
         text-decoration: none;

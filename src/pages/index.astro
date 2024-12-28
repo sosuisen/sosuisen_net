@@ -24,17 +24,42 @@ const projects = [
 const pageTitle = "疏水線";
 const subTitle = "sosuisen - the path where water flows.";
 ---
-<BaseLayout pageTitle={pageTitle} subTitle={subTitle}> 
-  <img src="/images/offline_capable_small.png" alt="projects" />
+
+<BaseLayout pageTitle={pageTitle} subTitle={subTitle}>
+  <img
+    src="/images/offline_capable_small.png"
+    alt="projects"
+    class="responsive-image"
+  />
   <h2>My projects</h2>
   <ul>
-    {projects.map((project) => (
-      <ProjectLink
-        url={project.url}
-        text={project.text}
-        description={project.description}
-        color={project.color}
-      />
-    ))}
+    {
+      projects.map((project) => (
+        <ProjectLink
+          url={project.url}
+          text={project.text}
+          description={project.description}
+          color={project.color}
+        />
+      ))
+    }
   </ul>
 </BaseLayout>
+
+<style>
+  /* レスポンシブ画像のスタイル */
+  .responsive-image {
+    width: 95%; /* 親要素の幅に応じて画像を拡大縮小 */
+    height: auto; /* アスペクト比を維持 */
+    max-width: 800px; /* 必要に応じて画像の最大幅を指定 */
+    display: block; /* 画像の下に余白を作らない */
+    margin: 0 auto; /* 中央揃え */
+  }
+  /* 画面が広いとき */
+  @media screen and (min-width: 636px) {
+    .responsive-image {
+      width: auto;
+      margin: 0 0;
+    }
+  }
+</style>
