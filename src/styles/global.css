@@ -31,24 +31,27 @@ main {
 }
 
 ul {
-    padding: 0.1rem 0.1rem 0.1rem 1.0rem;
+    padding: 0rem 0.1rem 0rem 1.0rem;
+}
+
+li {
+    margin: 0.5rem 0;
 }
 
 ul ul {
-    font-size: 0.9rem;
-    background-color: #fcfcfc;
-    border: 1px dashed #909090;
+    font-size: 1.0rem;
 }
 
 ul ul ul {
-    font-size: 0.8rem;
-    background-color: #f8f8f8;
+    font-size: 0.95rem;
 }
 
 ul ul ul ul {
-    font-size: 0.7rem;
-    background-color: #f4f4f4;
+    font-size: 0.9rem;
+}
 
+ul ul ul ul ul {
+    font-size: 0.85rem;
 }
 
 /* 画面が広いとき */
