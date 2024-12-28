@@ -17,18 +17,6 @@ body {
     box-sizing: border-box;
 }
 
-/* 画面が狭いとき */
-
-h1 {
-    font-size: 1.6rem;
-    line-height: 1.4rem;
-    color: #444;
-    margin-bottom: 4rem;
-}
-
-main {
-    padding: 1rem;
-}
 
 ul {
     padding: 0rem 0.1rem 0rem 1.0rem;
@@ -54,6 +42,20 @@ ul ul ul ul ul {
     font-size: 0.85rem;
 }
 
+
+/* 画面が狭いとき */
+
+h1 {
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    color: #444;
+    margin-bottom: 4rem;
+}
+
+main {
+    padding: 1rem;
+}
+
 /* 画面が広いとき */
 @media screen and (min-width: 636px) {
 
@@ -66,9 +68,5 @@ ul ul ul ul ul {
 
     main {
         padding: 2rem;
-    }
-
-    ul {
-        padding-left: auto;
     }
 }
