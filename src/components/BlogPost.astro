@@ -4,7 +4,7 @@ const { url, title, createdDate } = Astro.props;
 
 <li>
     <a href={url}>
-        <span class="date">{createdDate.substring(0,10)}</span>
+        <span class="date">{createdDate.slice(0, 10)}</span>
         <span class="title">{title}</span>
     </a>
 </li>
